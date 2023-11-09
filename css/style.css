@@ -1,0 +1,53 @@
+body {
+    margin-left: 40px; 
+   background-color: rgb(255, 255, 255);
+   font-family: verdana;
+   color: rgb(0, 136, 247);
+   font-family: 'Lato', sans-serif;
+}
+
+.sidebar {
+    width: 20px;
+    background-color: #0088F7; 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+h1,
+h2,
+h3,
+h4 { 
+    font-family: 'Lato', sans-serif;
+    color: rgb(0, 136, 247);
+}
+
+p { 
+    color: rgb(10, 52, 87);
+}
+
+ul,
+li,
+td { 
+    font-weight: 300;
+    color: rgb(65, 65, 65);
+}
+
+
+
+header {
+    color: rgb(0, 0, 0);
+}
+
+.diplomes,
+.experiences,
+.langues,
+.hardskills,
+.softskills {
+    border-bottom: 1px solid rgb(0, 136, 247);
+}
+
+li {
+    list-style-type: square;
+}
