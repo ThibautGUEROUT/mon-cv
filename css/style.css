@@ -1,7 +1,6 @@
 body {
     margin-left: 2.5em; 
    background-color: rgb(255, 255, 255);
-   font-family: verdana;
    color: rgb(0, 136, 247);
    font-family: 'Lato', sans-serif;
 }
@@ -22,6 +21,26 @@ body {
     bottom: 0;
     left: 0;
   }
+
+a:link {
+    color: black;
+    text-decoration: none; 
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(0, 136, 247); 
+    text-decoration: underline; 
+}
+
+a:active {
+    color: black;
+    text-decoration: none;
+}
 
 section {
     border: 5px dotted red
