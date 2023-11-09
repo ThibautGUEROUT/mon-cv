@@ -1,5 +1,5 @@
 body {
-    margin-left: 40px; 
+    margin-left: 2.5em; 
    background-color: rgb(255, 255, 255);
    font-family: verdana;
    color: rgb(0, 136, 247);
@@ -8,14 +8,14 @@ body {
 
 .photoprofil {
     border-radius: 50%;
-    border: 3px solid rgb(0, 136, 247); 
+    border: 0.1875em solid rgb(0, 136, 247); 
     object-fit: cover; 
-    width: 100px; 
-    height: 100px; /
+    width: 6.25em; 
+    height: 6.25em;
   }
 
 .sidebar {
-    width: 20px;
+    width: 1.25em;
     background-color: rgb(0, 136, 247); 
     position: fixed;
     top: 0;
@@ -23,16 +23,31 @@ body {
     left: 0;
   }
 
+section {
+    border: 5px dotted red
+}
+
 h1,
-h2,
-h3,
-h4 { 
+h2 { 
     font-family: 'Lato', sans-serif;
+    font-weight: bold;
     color: rgb(0, 136, 247);
 }
 
+h3 { 
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    color: rgb(0, 136, 247);
+}
+
+
 p { 
     color: rgb(10, 52, 87);
+}
+
+em { 
+    font-weight: 500;
+    color: rgb(0, 0, 0);
 }
 
 ul,
@@ -48,20 +63,54 @@ header {
     color: rgb(0, 0, 0);
 }
 
-.diplomes,
-.experiences,
-.langues,
-.hardskills,
-.softskills {
-    border-bottom: 1px solid rgb(0, 136, 247);
-}
+.barrebleue {
+    height: 2px;
+    background-color: rgb(0, 136, 247);
+    width: 100%;
+    margin-top: 5px;
+  }
+
 
 li {
-    list-style-type: square;
+    list-style-type: none;
 }
 
-td img {
-    width: 20px;
-    height: auto;
+.SuiteAdobe::after {
+    content: url("/img/adobe.png");
+    width: 20px; 
+    height: 20px; 
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.Figma::after {
+    content: url("/img/figma.png");
+    width: 20px; 
+    height: 20px; 
+    vertical-align: middle; 
+    margin-left: 10px;
+}
+
+.PackMicrosoftOffice::after {
+    content: url("/img/bureau.png");
+    width: 20px; 
+    height: 20px; 
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.WordPress::after {
+    content: url("/img/wordpress.png");
+    width: 20px; 
+    height: 20px; 
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.Canva::after {
+    content: url("/img/ca");
+    width: 20px; 
+    height: 20px; 
     vertical-align: middle;
 }
+
