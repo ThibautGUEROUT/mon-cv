@@ -76,7 +76,7 @@ li {
 }
 
 .SuiteAdobe::after {
-    content: url("..img/adobe.png");
+    content: url("../img/adobe.png");
     width: 20px; 
     height: 20px; 
     vertical-align: middle;
@@ -84,7 +84,7 @@ li {
 }
 
 .Figma::after {
-    content: url("..img/figma.png");
+    content: url("../img/figma.png");
     width: 20px; 
     height: 20px; 
     vertical-align: middle; 
@@ -92,7 +92,7 @@ li {
 }
 
 .PackMicrosoftOffice::after {
-    content: url("..img/bureau.png");
+    content: url("../img/bureau.png");
     width: 20px; 
     height: 20px; 
     vertical-align: middle;
@@ -100,7 +100,7 @@ li {
 }
 
 .WordPress::after {
-    content: url("..img/wordpress.png");
+    content: url("../img/wordpress.png");
     width: 20px; 
     height: 20px; 
     vertical-align: middle;
@@ -108,9 +108,10 @@ li {
 }
 
 .Canva::after {
-    content: url("../img/ca");
+    content: url("../img/ca.png");
     width: 20px; 
     height: 20px; 
     vertical-align: middle;
+    margin-left: 10px;
 }
 
