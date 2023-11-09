@@ -82,41 +82,61 @@ li {
 }
 
 .SuiteAdobe::after {
-    content: url("../img/adobe.png");
-    width: 20px; 
-    height: 20px; 
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/adobe.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     vertical-align: middle;
     margin-left: 10px;
 }
 
 .Figma::after {
-    content: url("../img/figma.png");
-    width: 20px; 
-    height: 20px; 
-    vertical-align: middle; 
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/figma.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
     margin-left: 10px;
 }
 
 .PackMicrosoftOffice::after {
-    content: url("../img/bureau.png");
-    width: 20px; 
-    height: 20px; 
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/bureau.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     vertical-align: middle;
     margin-left: 10px;
 }
 
 .WordPress::after {
-    content: url("../img/wordpress.png");
-    width: 20px; 
-    height: 20px; 
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/wordpress.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     vertical-align: middle;
     margin-left: 10px;
 }
 
 .Canva::after {
-    content: url("../img/ca.png");
-    width: 20px; 
-    height: 20px; 
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/canva-png.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     vertical-align: middle;
     margin-left: 10px;
 }
