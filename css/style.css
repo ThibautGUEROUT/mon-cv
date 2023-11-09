@@ -100,6 +100,38 @@ li {
     list-style-type: none;
 }
 
+.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 15px;
+  }
+  
+  .timeline-point {
+    position: absolute;
+    left: 0px;
+    background-color: rgb(0, 136, 247);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px; 
+    z-index: 2;
+  }
+  
+  .timeline-content {
+    padding-left: 10px;
+  }
+  
+  .diplomes .timeline::before,
+  .experiences .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 5px;
+    height: 100%;
+    width: 2px;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+  }
+  
 .SuiteAdobe::after {
     content: "";
     display: inline-block;
@@ -109,7 +141,7 @@ li {
     background-size: contain;
     background-repeat: no-repeat;
     vertical-align: middle;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .Figma::after {
@@ -121,7 +153,7 @@ li {
     background-size: contain;
     background-repeat: no-repeat;
     vertical-align: middle;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .PackMicrosoftOffice::after {
@@ -133,7 +165,7 @@ li {
     background-size: contain;
     background-repeat: no-repeat;
     vertical-align: middle;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .WordPress::after {
@@ -145,7 +177,7 @@ li {
     background-size: contain;
     background-repeat: no-repeat;
     vertical-align: middle;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .Canva::after {
@@ -157,6 +189,5 @@ li {
     background-size: contain;
     background-repeat: no-repeat;
     vertical-align: middle;
-    margin-left: 10px;
+    margin-left: 5px;
 }
-
