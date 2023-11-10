@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin-left: 2.5em; 
    background-color: rgb(255, 255, 255);
@@ -53,7 +57,7 @@ td {
     height: 6.25em;
   }
 
-.sidebar {
+.sidebar { /* Rectangle bleu à gauche du CV */
     width: 1.25em;
     background-color: rgb(0, 136, 247); 
     position: fixed;
@@ -62,10 +66,10 @@ td {
     left: 0;
   }
 
-  .barrebleue {
+  .barrebleue { /* Trait bleu sous chaque h */
     height: 2px;
     background-color: rgb(0, 136, 247);
-    width: 90%;
+    width: 95%;
     margin-top: 5px;
   }
 
@@ -161,22 +165,22 @@ td {
     margin-left: 5px;
 }
 
-a:link {
+a:link { /* Liens en noir au lieu de violet*/
     color: black;
     text-decoration: none; 
 }
 
-a:visited {
+a:visited { /* Liens en noir au lieu de violet*/
     color: black;
     text-decoration: none;
 }
 
-a:hover {
+a:hover { /* Liens deviennent bleus quand on passe la souris*/
     color: rgb(0, 136, 247); 
     text-decoration: underline; 
 }
 
-a:active {
+a:active { /* Liens en noir au lieu de violet*/
     color: black;
     text-decoration: none;
 }
@@ -187,19 +191,36 @@ li {
 
 .colonnes {
     display: flex;
+    position:static;
     justify-content: space-between;
   }
   
-  .langues, 
-  .hardskills, 
-  .softskills {
+.langues, 
+.hardskills, 
+.softskills,
+.centres {
     flex: 1;
-    margin: 10px;
+    margin-top: -30px;
     padding: 20px;
-
   }
-  
-    .langues, .hardskills, .softskills {
-      flex-basis: 100%;
-    }
-  
+
+  .langues,
+  .centres {
+    margin-left: -15px;
+}
+
+.centres-d {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.centres-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 25%;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
