@@ -56,7 +56,7 @@ h2 {
 
 h3 { 
     font-family: 'Lato', sans-serif;
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 18px;
     color: rgb(0, 136, 247);
 }
@@ -108,11 +108,11 @@ li {
   
   .timeline-point {
     position: absolute;
-    left: 0px;
+    left: 2px;
     background-color: rgb(0, 136, 247);
     border-radius: 50%;
-    width: 10px;
-    height: 10px; 
+    width: 8px;
+    height: 8px; 
     z-index: 2;
   }
   
@@ -127,8 +127,8 @@ li {
     top: 0;
     left: 5px;
     height: 100%;
-    width: 2px;
-    background-color: rgb(0, 0, 0);
+    width: 1px;
+    background-color: rgb(151, 151, 151);
     z-index: 1;
   }
   
