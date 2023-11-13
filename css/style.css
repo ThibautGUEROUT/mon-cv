@@ -79,6 +79,15 @@ td {
     margin-top: 5px;
   }
 
+  .hardskills table {
+    width: 100%; /* Ajuste la largeur du tableau à la largeur du conteneur */
+}
+
+.hardskills {
+    white-space: nowrap;
+    padding: 5px;
+}
+
   .timeline {
     list-style-type: none;
     position: relative;
