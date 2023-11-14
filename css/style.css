@@ -3,7 +3,7 @@
 }
 
 body {
-    margin-left: 2.5em; 
+   margin-left: 2.5em; 
    background-color: rgb(255, 255, 255);
    color: rgb(0, 136, 247);
    font-family: 'Lato', sans-serif;
@@ -80,7 +80,7 @@ td {
   }
 
   .hardskills table {
-    width: 100%; /* Ajuste la largeur du tableau à la largeur du conteneur */
+    width: 100%; 
 }
 
 .hardskills {
