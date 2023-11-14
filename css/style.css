@@ -252,22 +252,21 @@ li {
     white-space: normal;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px; /* Arrondir les coins */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Effet d'une ombre */
     visibility: hidden;
     transition: visibility 0s, opacity 0.3s linear;
     max-width: 250px;
-    overflow: auto;
+    overflow: auto; /* Facilite le défilement automatique si ma description est trop longue */
 }
 
 .interet:hover .description {
-    visibility: visible;
+    visibility: visible; /* Sans cela mes descriptions n'étaient pas visibles ????? */
     opacity: 1;
 }
 
 .interet:hover img {
-    transform: scale(1.1) rotate(10deg);
-    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1) rotate(10deg); /* Agrandir mon image à 110% + rotation de 10° quand on passe la souris */
 }
 
 .emoji-pluie {
@@ -276,9 +275,9 @@ li {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -5;
+    z-index: -5; /* Pour que les emojis passent dessous le texte et non dessus  */
     overflow: hidden;
-    pointer-events: none;
+    pointer-events: none; /* Ne pas rendre cliquable les emojis  */
 }
 
 .emoji-pluie div {
@@ -288,7 +287,7 @@ li {
     opacity: 0;
 }
 
-@keyframes rain {
+@keyframes rain { /* Définir une séquence d'étapes */
     0% {
         top: -10%;
         opacity: 1;
@@ -313,7 +312,7 @@ li {
     animation-delay: 2s;
 }
 
-@keyframes typewriter {
+@keyframes typewriter { /* Définir une séquence d'étapes */
     from { width: 0; }
     to { width: 100%; }
   }
@@ -325,21 +324,21 @@ li {
     white-space: nowrap;
     letter-spacing: .15em;
     animation: 
-      typewriter 4s steps(40) 1s 1 normal both, 
-      blinkTextCursor 500ms steps(40) infinite normal;
+      typewriter 4s steps(40) 1s 1 normal both, /* Animation pour l'effet machine à écrire, durée de 4s, début après 1s */
+      blinkTextCursor 500ms steps(40) infinite normal; /* Animation pour le clignotement du curseur, durée de 500ms */
   }
   
-  @keyframes blinkTextCursor {
+  @keyframes blinkTextCursor { /* Définir une séquence d'étapes */
     from { border-right-color: black; }
     to { border-right-color: transparent; }
   }
 
-  @keyframes fadeIn {
+  @keyframes fadeIn { /* Définir une séquence d'étapes */
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
-@keyframes slideIn {
+@keyframes slideIn { /* Définir une séquence d'étapes */
     from { left: -50px; opacity: 0; }
     to { left: 0; opacity: 1; }
 }
