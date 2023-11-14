@@ -23,7 +23,7 @@ h2 {
 
 h2 {
     position: relative;
-    animation: slideIn 1s ease-out;
+    animation: slideIn 1s ease-out; /* Keyframes plus bas */
 }
 
 h3 { 
@@ -60,7 +60,7 @@ td {
     object-fit: cover; 
     width: 6.25em; 
     height: 6.25em;
-    animation: fadeIn 10s ease-in-out;
+    animation: fadeIn 10s ease-in-out; /* Keyframes plus bas */
   }
 
 .sidebar { /* Rectangle bleu à gauche du CV */
@@ -312,7 +312,7 @@ li {
     animation-delay: 2s;
 }
 
-@keyframes typewriter { /* Définir une séquence d'étapes */
+@keyframes typewriter { /* Animation d'une machine à écrire + Définir une séquence d'étapes */
     from { width: 0; }
     to { width: 100%; }
   }
@@ -328,17 +328,16 @@ li {
       blinkTextCursor 500ms steps(40) infinite normal; /* Animation pour le clignotement du curseur, durée de 500ms */
   }
   
-  @keyframes blinkTextCursor { /* Définir une séquence d'étapes */
+  @keyframes blinkTextCursor { /* Animation du curseur d'ordinateur + Définir une séquence d'étapes */
     from { border-right-color: black; }
     to { border-right-color: transparent; }
   }
 
-  @keyframes fadeIn { /* Définir une séquence d'étapes */
+  @keyframes fadeIn { /* Animation pour faire apparaître lentement la photo + Définir une séquence d'étapes */
     from { opacity: 0; }
     to { opacity: 1; }
-}
-
-@keyframes slideIn { /* Définir une séquence d'étapes */
+    
+}@keyframes slideIn { /* Animation pour les titres apparaissent + Définir une séquence d'étapes */
     from { left: -50px; opacity: 0; }
     to { left: 0; opacity: 1; }
 }
